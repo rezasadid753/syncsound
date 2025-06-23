@@ -92,7 +92,7 @@ PulseAudio loopback modules don’t persist after reboot, so run these commands 
 
 ```bash
 pactl unload-module module-loopback
-pactl load-module module-loopback source=multiout.monitor sink=alsa_output.pci-0000_00_1f.3.analog-stereo latency_msec=250
+pactl load-module module-loopback source=multiout.monitor sink=alsa_output.pci-0000_00_1f.3.analog-stereo latency_msec=260
 pactl load-module module-loopback source=multiout.monitor sink=bluez_output.87_8F_ED_29_C3_F6.1 latency_msec=0
 ```
 
